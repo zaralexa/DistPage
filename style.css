@@ -1,0 +1,213 @@
+ body{
+  background-image: urL('images/back1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  background-attachment:fixed;
+}
+
+.border{
+  border: solid 1px red;
+}
+
+#bodyContainer{
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+#messagesContainer{
+  padding: 10px;
+}
+.new-message{
+  border: solid 1px blue;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+#logo{
+  font-family: 'Paytone One', sans-serif !important;
+  margin-left: 5px;
+}
+
+.color-yellow{
+  color:yellow;
+}
+
+#contentSection{
+  min-height: 400px;
+}
+
+h4{
+  font-family: 'Roboto', sans-serif;
+  color : white;
+  padding: -top: 10px;
+  padding: -bottom: 10px;
+}
+
+h5{
+  font-family: 'Roboto', sans-serif;
+  color : white;
+  font-size: 18px;
+  text-align: center;
+  padding: -bottom: 30px;
+  font-weight: bold;
+}
+
+#participantsContent{
+  background-color: #6a1b9a;
+}
+
+.btn-zabiot{
+  background-color: #6a1b9a;
+}
+
+.fa-close-modal{
+  margin-left: 20px;
+}
+
+.fa-close-modal:hover{
+  cursor: pointer;
+}
+
+
+.modal-title{
+  color: #6a1b9a !important;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+    .modal-title{
+      font-size: 14px;
+    }
+}
+
+.btn-zabiot:hover{
+  background-color: #4a148c;
+}
+
+.card-title{
+  color : #4a148c !important;
+  font-weight: bold;
+}
+
+.card{
+  cursor: pointer;
+  background-color: #f5f5f5;
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.card:hover{
+  background-color: #e0e0e0 !important;
+}
+
+.participant-img-container{
+  padding: 10px;
+}
+
+.participant-img-container:hover{
+  transform: scale(1.05);
+  transition-duration: .2s;
+  cursor: pointer;
+}
+
+.participant-img{
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+  width: 70%;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.center{
+  text-align: center;
+}
+
+.videoWrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.participantsContentRow{
+  margin-bottom: 0px !important;
+}
+
+#frmVideo{
+  width: 100%;
+  max-width: 650px;
+  height: 400px;
+}
+
+.icon-connected{
+  width: 30px;
+  height: 30px;
+}
+
+.modalHZ{
+  position: fixed;
+  left: 0px;
+  top:0px;
+  right: 0;
+  bottom: 0px;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s; /* Safari */
+   transition: opacity .3s;
+}
+
+.modal-card{
+  background-color: white;
+  height:50vh;
+  width: 60vw;
+  z-index: 101;
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .modal-card{
+      width: 98vw;
+    }
+
+    .fa-close-modal{
+      margin-left: -10px;
+    }
+}
+
+.modalin{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-data{
+  font-weight: bold;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+}
